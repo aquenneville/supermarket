@@ -1,7 +1,7 @@
-# supermarket 
-# to run the main in the Checkout class
+supermarket 
+to run the main in the Checkout class
 
-# to modify the price rules: 
+to modify the price rules: 
 1 - choose one of the implementation in the pricerules package and change the values
 or 
 2 - implement your own by implementing the IPriceRule interface
