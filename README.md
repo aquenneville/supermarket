@@ -1,5 +1,5 @@
 supermarket project<br>
-to run the main in the Checkout class<br>
+to run: run the main in the Checkout class<br>
 <br>
 to modify the price rules: <br>
 1 - choose one of the implementation in the pricerules package and change the values<br>
