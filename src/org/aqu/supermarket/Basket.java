@@ -195,10 +195,9 @@ public class Basket {
 		String[] lines = contentRaw.split("\n");
 		for(String line: lines) {
 			if (line != null) {
-			System.out.println(line.split(";")[0]);
-			int itemId = Integer.parseInt(line.split(";")[0]);
-			int itemQty = Integer.parseInt(line.split(";")[1]);
-			basket.addItem(Catalog.getItem(itemId), itemQty);
+			    int itemId = Integer.parseInt(line.split(";")[0]);
+			    int itemQty = Integer.parseInt(line.split(";")[1]);
+			    basket.addItem(Catalog.getItem(itemId), itemQty);
 			}
 		}
 		return basket;
