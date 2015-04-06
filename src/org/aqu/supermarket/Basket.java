@@ -16,6 +16,16 @@ import org.aqu.supermarket.model.Item;
 /**
  * Class representation of the Supermarket customer basket.
  * Items are grouped together by category.
+ * Model:
+ *  Category 1: 
+ *          Id1, Item1
+ *          Id2, Item2
+ *          Id3, Item3
+ *          Id6, Item6
+ *  Category 2:
+ *          Id4, Item4
+ *          Id5, Item5
+ * ...
  * 
  * @author aqu
  *
