@@ -1,4 +1,4 @@
-supermarket 
+supermarket project<br>
 to run the main in the Checkout class<br>
 <br>
 to modify the price rules: <br>
