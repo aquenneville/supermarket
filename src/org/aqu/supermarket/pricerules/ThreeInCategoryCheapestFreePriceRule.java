@@ -41,10 +41,6 @@ public class ThreeInCategoryCheapestFreePriceRule implements IPriceRule {
 		int index = 0; 
 		float minPrice = -1;
 		int minPricePosition = -1;
-<<<<<<< HEAD
-		
-=======
->>>>>>> f671bb19d1b0db71c33a9e07c8a0f73b41b5e74a
 		for (Item item: items) {
 			float currentPrice = item.getPrice();
 			if (index > 0 && currentPrice < minPrice ) {
