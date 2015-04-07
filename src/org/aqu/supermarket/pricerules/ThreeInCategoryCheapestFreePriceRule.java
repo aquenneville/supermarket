@@ -21,8 +21,6 @@ public class ThreeInCategoryCheapestFreePriceRule implements IPriceRule {
 				
 	}
 
-
-	
 	@Override
 	public float calculateDiscount(List<Item> items) {
 		float discount = 0;
@@ -41,16 +39,15 @@ public class ThreeInCategoryCheapestFreePriceRule implements IPriceRule {
 	
 	public int getSmallestPriceInList(List<Item> items) {
 		int index = 0; 
-		float minPrice = 0;
-		int minPricePosition = index;
+		float minPrice = -1;
+		int minPricePosition = -1;
+		
 		for (Item item: items) {
 			float currentPrice = item.getPrice();
 			if (index > 0 && currentPrice < minPrice ) {
 				minPrice = item.getPrice();
 				minPricePosition = index; 
-			} else {
-				minPrice = item.getPrice();
-			}
+			} 
 			index ++;
 		}
 		return minPricePosition;
@@ -66,4 +63,7 @@ public class ThreeInCategoryCheapestFreePriceRule implements IPriceRule {
 		return itemsProcessedNumber;
 	}
 	
+	public Category getCategory() {
+		return CATEGORY_ALLOWED;
+	}
 }
